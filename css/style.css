@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+/* media-quary-start*/
+@media only screen (max-width:674px;){
+    
+}
+/* media-quary-end*/
 
 body{
     margin: 0;
@@ -39,12 +44,18 @@ section.hero-area {
     align-items: center;
 }
 .hero-title > .box-btn {
-    background-color: #DD0000;
-    color: #fff;
+    background-color: rgb(12 119 0);
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     display: inline-block;
     margin-top: 30px;
+    border-radius: 5px;
+    transition: .3s;
 }
+.box-btn:hover{
+    background: #E53E31;
+}
+
 .hero-img img {
     width: 581px;
 }
@@ -60,7 +71,7 @@ section.hero-area {
 }
 
 .news-btn a {
-    background-color: #fff;
+    background-color: rgb(12 119 0);
     width: 252px;
     display: inline-block;
     height: 64px;
@@ -68,8 +79,9 @@ section.hero-area {
     margin-top: 15px;
     font-size: 18px;
     font-weight: 600;
-    color: #000;
+    color: #fff;
     border-radius: 10px;
+    transition: .3s;
 }
 .news-btn a:hover {
     background: #E53E31;
@@ -95,7 +107,7 @@ p.next-match {
 p.next-match span {
     margin-left: 10px;
 }
-section {
+.blog {
     display: flex;
     justify-content: flex-end;
 }
@@ -107,7 +119,61 @@ article.blog-section {
     justify-content: end;
 }
 
+.single-blog {border: 1px solid #ddd;border-radius: 10px;}
 
-
-
+.blog-title {
+    padding: 0px 15px 15px;
+}
 /* article-section-end */
+/* footer-section-start */
+footer.footer-section {
+    text-align: center;
+    color: #fff;
+    background: #000;
+    padding: 70px 0;
+    margin-top: 80px;
+}
+footer.footer-section h1 {
+    border-bottom: 1px solid #2b2b2bdd;
+    padding-bottom: 30px;
+}
+.footer-manu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-manu ul li {
+    display: inline-block;
+    margin:  30px;
+    font-size: 14px;
+}
+/* footer-section-end*/
+
+/*upcomming-match */
+.single-upcomming-match {
+    text-align: center;
+    padding: 53px 30px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+article.upcomming-match {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+section.match-blog {
+    display: flex;
+    justify-content: space-evenly;
+}
+.upcomming-news-btn {
+    margin: 0;
+}
+.between {
+    padding: 15px;
+}
+.flag {
+    display: flex;
+    align-items: center;
+}
