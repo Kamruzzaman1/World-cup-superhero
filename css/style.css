@@ -244,16 +244,43 @@ section.match-blog {
 /* mobile */
 /* tablet */
 @media screen and (min-width:577px) and (max-width:992px)  {
+    img{
+        width: 100%;
+    }
     .blog {
         display: block;
     }
     .news-btn {
         display: flex;
         background: none;
-        justify-content: space-between;
+        justify-content: center;
         height: auto;
-        width:auto ;
-
+        width: auto;
+    }
+    .news-btn p {
+        margin: 10px;
+    }
+    .news-btn a {
+        display: inline-block;
+        width: 200px;
+        background: none;
+        color: #000;
+        border: 1px solid #ddd;
+    }
+    .hero-img img {
+        width: 100%;
+    }
+    .hero-title h1 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    article.blog-section {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+    }
+    .footer-manu ul{
+        padding: 5%;
     }
 
     }
