@@ -247,7 +247,17 @@ section.match-blog {
     img{
         width: 100%;
     }
+    header.container{
+        margin: 10px;
+    }
+    .hero{
+        padding: 15px;
+    }
     .blog {
+        display: block;
+    }
+   
+    section.match-blog{
         display: block;
     }
     .news-btn {
@@ -279,9 +289,14 @@ section.match-blog {
         grid-template-columns: repeat(2, 1fr);
         margin: 10px;
     }
+    article.upcomming-match {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+    }
     .footer-manu ul{
         padding: 5%;
     }
 
     }
+    /* table */
     
