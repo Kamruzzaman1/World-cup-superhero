@@ -66,7 +66,7 @@ section.hero-area {
 }
 
 .news-btn a {
-    background-color: rgb(12 119 0);
+    background-color: rgb(14, 138, 2);
     width: 252px;
     display: inline-block;
     height: 64px;
@@ -76,11 +76,32 @@ section.hero-area {
     font-weight: 600;
     color: #fff;
     border-radius: 10px;
-    transition: .3s;
+    position: relative;
+    /* transition: ease-out .3s;
+    box-shadow: inset 0 0 0 0 #e53e31; */
+    z-index:1;
 }
-.news-btn a:hover {
-    background: #E53E31;
+.news-btn a:before{
+    transition:.5s all ease;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    content: "";
+    border-radius: 5px;
+    /* background-color: #e53e31; */
+
+}
+.news-btn a:hover:before {
+    /* box-shadow: inset 252px 0 0 0 #e53e31; */
+    transition:.5s all ease;
+    background-color: #e53e31;
     color: #fff;
+    right: 0%;
+    left: 0%;
+    z-index:-1;
+
 }
 .blog-btn {
     border: 1px solid #ddd;
