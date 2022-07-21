@@ -119,6 +119,20 @@ article.blog-section {
 .blog-title {
     padding: 0px 15px 15px;
 }
+
+.block-btn {
+    text-align: center;
+    display: none;
+}
+a.btn {
+    margin-top: 70px;
+    display: inline-block;
+    font-weight: 600;
+    background-color: #DD0000;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+}
 /* article-section-end */
 /* footer-section-start */
 footer.footer-section {
@@ -233,6 +247,7 @@ section.match-blog {
         border-radius: 25px;
         margin: 15px;
     }
+    
     .footer-manu ul li{
         display:block;
     }
@@ -293,10 +308,15 @@ section.match-blog {
         grid-template-columns: repeat(2, 1fr);
         margin: 10px;
     }
+    .block-btn {
+        display: block;
+    }
+    .single-blog:nth-last-child(9) {
+        display: none;
+    }
     .footer-manu ul{
         padding: 5%;
     }
 
     }
     /* table */
-    
